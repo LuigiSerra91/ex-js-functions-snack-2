@@ -65,16 +65,49 @@ const somma2 = (a, b) => a + b;
 //console.log(eseguiOperazione(1, 2, somma));
 
 
-/* Snack 4
-Crea un generatore di funzioni creaTimer
-Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
- */
+// Snack 4
+//Crea un generatore di funzioni creaTimer
+//Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
+function creaTimer(ms) {
+    return function () {
+        setTimeout(() => {
+            console.log("Tempo scaduto!");
+        }, ms);
+    };
+}
 
-/* Snack 5
-Crea una funzione stampaOgniSecondo con setInterval.
-Definisci una funzione che accetta un messaggio e lo stampa ogni secondo.
+const time = creaTimer(2000)
 
-Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script. */
+//time()
+
+
+
+
+
+//Snack 5
+//Crea una funzione stampaOgniSecondo con setInterval.
+//Definisci una funzione che accetta un messaggio e lo stampa ogni secondo.
+
+
+function stampaOgniSecondo(messaggio) {
+    const messaggi = setInterval(() => {
+        console.log(messaggio);
+        clearInterval(messaggi)
+    }, 3000)
+
+    return messaggi
+
+}
+
+stampaOgniSecondo('hello')
+
+
+
+
+
+
+
+//Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script. 
 
 
 /* Snack 6
