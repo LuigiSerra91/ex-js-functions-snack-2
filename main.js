@@ -131,11 +131,31 @@ setTimeout(() => {
     clearInterval(idContatore);
     console.log("Contatore fermato!");
 }, 10000);
+
+
 /* Snack 7
 Crea una funzione che ferma un timer dopo un certo tempo
 Scrivi una funzione eseguiEferma che accetta un messaggio, un tempo di avvio e un tempo di stop. Il messaggio deve essere stampato a intervalli regolari, ma si deve fermare dopo il tempo di stop.
  */
 
+function eseguiFerma(messaggio, avvio, stop) {
+    setTimeout(() => {
+        console.log('Timer avviato');
+        const intervallo = setInterval(() => {
+            console.log(messaggio);
+
+        }, 2000)
+
+        setTimeout(() => {
+            clearInterval(intervallo)
+            console.log('Tempo scaduto');
+
+        }, stop)
+
+    }, avvio)
+}
+
+//eseguiFerma('we', 2000, 6000)
 
 /* Snack 8 (Bonus)
 Crea una funzione che simula un conto alla rovescia
