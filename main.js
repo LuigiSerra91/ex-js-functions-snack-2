@@ -1,4 +1,4 @@
-console.log('hello World');
+//console.log('hello World');
 // Snack 1
 
 // Crea una funzione che somma due numeri.
@@ -7,7 +7,7 @@ function somma(num1, num2) {
 
     return num1 + num2
 }
-console.log(somma(2, 2));
+//console.log(somma(2, 2));
 
 // Crea una funzione dichiarativa chiamata somma che accetta due numeri e restituisce la loro somma.
 
@@ -16,7 +16,7 @@ function somma(num1, num2) {
     const result = num1 + num2
     return result
 }
-console.log(somma(8, 2));
+//console.log(somma(8, 2));
 
 //Poi, definisci la stessa funzione somma ma come funzione anonima assegnata a una variabile
 
@@ -27,7 +27,7 @@ const funzioneAnonima = function (num1, num2) {
     return somma
 }
 
-console.log(funzioneAnonima(2, 3));
+//console.log(funzioneAnonima(2, 3));
 
 
 //Snack 2
@@ -35,7 +35,7 @@ console.log(funzioneAnonima(2, 3));
 
 const quadratoDiUnNumero = (num) => Math.pow(num, 2)
 
-console.log(quadratoDiUnNumero(8));
+//console.log(quadratoDiUnNumero(8));
 
 
 
@@ -44,7 +44,7 @@ console.log(quadratoDiUnNumero(8));
 
 function quadrato(num) { return Math.pow(num, 2) }
 
-console.log(quadrato(2));
+//console.log(quadrato(2));
 
 
 
@@ -52,6 +52,17 @@ console.log(quadrato(2));
 Crea una funzione eseguiOperazione
 Definisci una funzione eseguiOperazione che accetta tre parametri: due numeri e una funzione operatore (callback). La funzione deve eseguire l'operazione fornita sui due numeri. */
 
+
+function eseguiOperazione(num1, num2, operatore) {
+
+
+    return operatore(num1, num2)
+}
+
+
+const somma2 = (a, b) => a + b;
+
+//console.log(eseguiOperazione(1, 2, somma));
 
 
 /* Snack 4
