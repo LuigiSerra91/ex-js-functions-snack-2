@@ -21,13 +21,9 @@ function somma(num1, num2) {
 //Poi, definisci la stessa funzione somma ma come funzione anonima assegnata a una variabile
 
 
-const funzioneAnonima = function (num1, num2) {
-    const somma = num1 + num2
+const somma1 = (num1, num2) => num1 + num2;
 
-    return somma
-}
-
-//console.log(funzioneAnonima(2, 3));
+console.log(somma(2, 3));
 
 
 //Snack 2
