@@ -1,22 +1,50 @@
 console.log('hello World');
-/* Snack 1
-Crea una funzione che somma due numeri.
-Crea una funzione dichiarativa chiamata somma che accetta due numeri e restituisce la loro somma.
-Poi, definisci la stessa funzione somma ma come funzione anonima assegnata a una variabile
-Quindi, riscrivi la funzione somma con la sintassi delle arrow functions. */
+// Snack 1
+
+// Crea una funzione che somma due numeri.
+
+function somma(num1, num2) {
+
+    return num1 + num2
+}
+console.log(somma(2, 2));
+
+// Crea una funzione dichiarativa chiamata somma che accetta due numeri e restituisce la loro somma.
+
 
 function somma(num1, num2) {
     const result = num1 + num2
-
     return result
 }
+console.log(somma(8, 2));
 
-console.log(somma(2, 2));
+//Poi, definisci la stessa funzione somma ma come funzione anonima assegnata a una variabile
 
 
-/* Snack 2
-Crea una arrow function che calcola il quadrato di un numero.
-Definisci una funzione chiamata quadrato che accetta un numero e restituisce il suo quadrato in una sola riga. */
+const funzioneAnonima = function (num1, num2) {
+    const somma = num1 + num2
+
+    return somma
+}
+
+console.log(funzioneAnonima(2, 3));
+
+
+//Snack 2
+//Crea una arrow function che calcola il quadrato di un numero.
+
+const quadratoDiUnNumero = (num) => Math.pow(num, 2)
+
+console.log(quadratoDiUnNumero(8));
+
+
+
+//Definisci una funzione chiamata quadrato che accetta un numero e restituisce il suo quadrato in una sola riga. 
+
+
+function quadrato(num) { return Math.pow(num, 2) }
+
+console.log(quadrato(2));
 
 
 
